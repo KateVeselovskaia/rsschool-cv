@@ -25,7 +25,7 @@
 **Courses**
 - RS School - JS learning course 
 - Coursera - Introduction to Web Development 
-- December 2019 | Moscow Digital Academy - UI/UX design 
+- Moscow Digital Academy - UI/UX design 
 
 **Working Experience:** 
 | Period | Company | Position |
