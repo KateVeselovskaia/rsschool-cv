@@ -1,0 +1,98 @@
+body {
+	font-size: 14px;
+    font-family: "Futura", "Arial", sans-serif; 
+	background-color: #000;
+}
+
+h2 {
+	line-height: 1px;
+	color: #64bde3;
+}
+
+h4 {
+	line-height: 20px;
+	color: #64bde3;
+}
+
+p {
+	margin: 5px 20px;
+	line-height: 12px;
+}
+
+table {
+	width: 90%; 
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 5px 12px;
+}
+
+table thead tr {
+    text-align: center;
+	border-top: 1px solid #e8e9eb;
+	font-weight: bold; 
+}
+
+table tr {
+    border-bottom: 1px solid #e8e9eb;
+}
+
+.resume {
+	width: 800px;
+	height: auto;
+	display: flex;
+	background: #fbfdfd;
+	margin: auto;
+}
+
+.resume 
+.left_section {
+	width: 350px;
+	height: auto;
+	background: #233771;
+}
+
+.resume 
+.left_section .left_content {
+	width: 100%;
+	color: #ced1d6; 
+	padding: 20px;
+}
+
+.resume 
+.left_section 
+.left_content 
+.left_description {
+	margin: 50px 1px 1px 1px;
+}
+
+.resume 
+.left_section 
+.avatar {
+	width: 350px;
+}
+
+.resume 
+.main_section {  
+    width: 450px;
+	padding: 25px;
+	color: #4a4c4f;
+}
+
+.university{
+	line-height: 15px;
+	margin: 10px 20px;
+	font-weight: bold;
+}
+
+.billet {
+	text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #64bde3;
+    border: 2px solid #b0c8ff;
+    margin: 25px 15px 5px 0;
+    padding: 5px 10px;
+	background: #233771;
+}
