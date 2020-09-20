@@ -1,5 +1,5 @@
 # Veselovskaya Ekaterina
-##### Junior Frontend Developer
+##### Frontend Developer
 **Tel:** 8-987-328-94-80
 **Email:** katerina.veselovskaya.v@yandex.ru
 
@@ -22,13 +22,17 @@
   return num + 1;  
 };  `
 
-**Experience:** 
-| Period | Experience / Related courses |
-| ------------- |-------------|
-|September 2020 - current | RS School - JS learning course |
-| August 2020 | Coursera - Introduction to Web Development | 
-| December 2019 | Moscow Digital Academy - UI/UX design |
-| 2013 - 2020 | QA engineer, QA lead |
+**Courses**
+- RS School - JS learning course 
+- Coursera - Introduction to Web Development 
+- December 2019 | Moscow Digital Academy - UI/UX design 
+
+**Working Experience:** 
+| Period | Company | Position |
+| ------------- |-------------|-------------|
+| 2016 - 2020 | ROKO Labs | QA engineer, QA lead |
+| 2013 - 2016 | NetCracker | QA engineer |
+
 
 **Education:** 
 *University:* Saratov State University
