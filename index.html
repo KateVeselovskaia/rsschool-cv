@@ -10,28 +10,28 @@
   </head> -->
   <body>
    <div class="container">
-    <header>
-        <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-              <li class="nav-item"><a href="#summary" class="nav-link">About</a></li>
-              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-              <li class="nav-item"><a href="#contacts" class="nav-link">English</a></li>
-              <li class="nav-item"><a href="#summary" class="nav-link">Experience</a></li>
-              <li class="nav-item"><a href="#skills" class="nav-link">Projects</a></li>
-            </ul>
-          </nav>
+    <header>   
+      <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#summary" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#contacts" class="nav-link">English</a></li>
+            <li class="nav-item"><a href="#summary" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Projects</a></li>
+          </ul>
+        </nav>
       </header>
     <main class="resume">
-      <section class="left_section">
+      <div class="left_section">
         <img class="avatar" src="https://i.ibb.co/gFFrFFJ/photo.jpg" alt="cv_photo">
-          <section class= "left_content">
-            <h1>EKATERINA VESELOVSKAYA</h1>
-              <h2>FRONT-END DEVELOPER</h2>
+          <div class= "left_content">
+            <h1>EKATERINA VESELOVSKAIA</h1>
+              <h3>FRONT-END DEVELOPER</h3>
                 <h4 class="left_description">CONTACTS:</h4> 
                   <ul>     
                     <li>Saint-Petersburg, Russia</li>
-                    <li>katerina.veselovskaya.v@yandex.ru</li>
+                    <li>Email: katerina.veselovskaya.v@yandex.ru</li>
                     <li>Mobile: 8-987-328-94-80</li>         
                     <li>Discord:KateV#5250</li>
                     <li>Skype: live:katerina.semenova2014</li>
@@ -54,9 +54,9 @@
                       <li><a href="https://kateveselovskaia.github.io/rsschool-cv/" class="project-link">Curriculum Vitae</a></li>
                       <li><a href="https://rolling-scopes-school.github.io/kateveselovskaia-JS2020Q3/webdev/" class="project-link">WebDev</a></li>
                     </ul>
-           </section>	
-      </section>	
-      <section class="main_section">
+           </div>	
+      </div>	
+      <div class="main_section">
         <h4 class="billet">ABOUT :</h4>		
           <ul>
             <li>7 years of experience in IT as QA engineer</li>           
@@ -74,12 +74,14 @@
         <h4 class="billet">WORKING EXPERIENCE:</h4>
           <table>
             <thead>
+             <tr>
               <th>Period</th>
               <th>Company</th>
               <th>Position</th>
+              </tr>
             </thead>
             <tbody> 
-            <tr>
+              <tr>
               <td>2016 - 2020</td>
               <td>ROKO Labs</td>
               <td>QA senior, QA lead</td>
@@ -87,53 +89,54 @@
             <tr>
               <td>2013 - 2016</td>
               <td>NetCracker</td>
-              <td>QA engineer</td>       </tbody> 
+              <td>QA engineer</td>       
+            </tbody> 
           </table>
         <h4 class="billet">EDUCATION:</h4>
           <p><b>University:</b> Saratov State University (2010-2015)</p>
           <p><b>Faculty:</b> Mechanic and Mathematics</p> 
           <p><b>Degree:</b> Applied Computer Science in Economics</p> 
         <h4 class="billet">CODE EXAMPLES:</h4>
-        <code>
-          <pre>
-            const MORSE_TABLE = {
-              '.----':  '1',
-              '..---':  '2',
-              '...--':  '3',
-              '....-':  '4',
-              '.....':  '5',
-              '-....':  '6',
-              '--...':  '7',
-              '---..':  '8',
-              '----.':  '9',
-              '-----':  '0',
-          };
+       <pre>
+         <code>       
+    const MORSE_TABLE = {
+      '.----':  '1',
+      '..---':  '2',
+      '...--':  '3',
+      '....-':  '4',
+      '.....':  '5',
+      '-....':  '6',
+      '--...':  '7',
+      '---..':  '8',
+      '----.':  '9',
+      '-----':  '0',
+  };
 
-          function decode(expr) {
-              let res ='';
-              let words = expr.split('**********');
-              words.forEach(word => {
-                  let letter = [];
-                  for(let i = 0; i < word.length; i += 10) {
-                      letter.push(word.slice(i,i + 10));
-                  }
-                  letter.forEach(item => {
-                      let l = item.replace(/10/g, '.');
-                      l = l.replace(/11/g, '-');
-                      l = l.replace(/00/g, '');
-                      res += MORSE_TABLE[l];
-                  })
-                  res+=' ';
-              });
-              return res.trimEnd();
-          } 
-
-          module.exports = {
-              decode
+  function decode(expr) {
+      let res ='';
+      let words = expr.split('**********');
+      words.forEach(word => {
+          let letter = [];
+          for(let i = 0; i &lt; word.length; i += 10) {
+              letter.push(word.slice(i,i + 10));
           }
-      </pre>
+          letter.forEach(item => {
+              let l = item.replace(/10/g, '.');
+              l = l.replace(/11/g, '-');
+              l = l.replace(/00/g, '');
+              res += MORSE_TABLE[l];
+          })
+          res+=' ';
+      });
+      return res.trimEnd();
+  } 
+
+  module.exports = {
+      decode
+  }
         </code>
-      </section>
+       </pre>
+      </div>
     </main>
     <footer>
       <ul class="footer-items">
