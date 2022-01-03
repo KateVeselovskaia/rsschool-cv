@@ -1,12 +1,69 @@
+* {
+    box-sizing: border-box;
+  }
+
+html {
+  background-color: #000;
+}
+
+header {
+  background-color: #233771;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  
+}
+
+.nav-item {
+  color: #ffffff;
+}
+
+.nav-item a {
+  color: #ffffff; 
+  text-decoration: none;
+}
+
+.nav li {
+  list-style: none; 
+}
+
+.container {
+    background-color: #ffffff;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
 body {
 	font-size: 14px;
-    font-family: "Futura", "Arial", sans-serif; 
-	background-color: #000;
+  font-family: "Futura", "Arial", sans-serif; 
+  background-color: #000;
+  min-height: 100vh;
+  margin: 0; padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+	line-height: 1px;
+	color: #64bde3;
 }
 
 h2 {
-	line-height: 1px;
-	color: #64bde3;
+  font-size: 15px;
+  line-height: 1px;
 }
 
 h4 {
@@ -21,7 +78,7 @@ p {
 
 table {
 	width: 90%; 
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 table td {
@@ -29,7 +86,7 @@ table td {
 }
 
 table thead tr {
-    text-align: center;
+  text-align: center;
 	border-top: 1px solid #e8e9eb;
 	font-weight: bold; 
 }
@@ -39,44 +96,48 @@ table tr {
 }
 
 .resume {
+  background: #fbfdfd;
 	width: 800px;
 	height: auto;
 	display: flex;
-	background: #fbfdfd;
-	margin: auto;
+  flex-direction: row;
 }
 
 .resume 
 .left_section {
-	width: 350px;
-	height: auto;
-	background: #233771;
+  background: #233771;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .resume 
 .left_section .left_content {
-	width: 100%;
-	color: #ced1d6; 
-	padding: 20px;
+  color: #ced1d6; 
+	padding: 35px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .resume 
 .left_section 
 .left_content 
 .left_description {
-	margin: 50px 1px 1px 1px;
+	margin: 55px 1px 1px 1px;
 }
 
 .resume 
 .left_section 
 .avatar {
-	width: 350px;
+	width: 100%;
 }
 
 .resume 
 .main_section {  
-    width: 450px;
-	padding: 25px;
+  width: auto;
+	padding: 5px;
 	color: #4a4c4f;
 }
 
@@ -87,12 +148,51 @@ table tr {
 }
 
 .billet {
-	text-align: left;
+   	text-align: left;
     font-size: 16px;
     font-weight: bold;
     color: #64bde3;
     border: 2px solid #b0c8ff;
-    margin: 25px 15px 5px 0;
-    padding: 5px 10px;
+    margin: 25px 25px 10px 0;
+    padding: 5px 20px;
 	background: #233771;
 }
+
+.project-link {
+  color: #ffffff;
+}
+
+
+footer { 
+  background-color: #233771;
+  border: solid #ffffff;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  display:  flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-items{
+   color: #ffffff;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 25%
+}
+
+.footer-item {
+  color: #ffffff;
+}
+
+footer li {
+  list-style: none; 
+}
+
+.logo { 
+ width: 10%;
+ margin: 5px 15px;
+
+}
+
